@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Sorter</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="mainLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="sourceLabel">
+      <property name="text">
+       <string>Copy from:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="sourceEdit"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="sourceButton">
+      <property name="text">
+       <string>Browse…</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="destLabel">
+      <property name="text">
+       <string>Copy to:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="destEdit"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="destButton">
+      <property name="text">
+       <string>Browse…</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="typesLabel">
+      <property name="text">
+       <string>File types:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="typesEdit">
+      <property name="text">
+       <string>.jpg, .png</string>
+      </property>
+      <property name="placeholderText">
+       <string>Separate with commas, e.g. .jpg, .png, .pdf</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QPushButton" name="copyButton">
+      <property name="text">
+       <string>Copy Files</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QListWidget" name="logList"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
